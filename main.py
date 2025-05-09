@@ -215,7 +215,7 @@ def create_overall_fund_performance(start_date: str, end_date: str) -> None:
         .fmt_percent(["Total Return", "Volatility", "Tracking Error", "Alpha"])
         .fmt_number(["Beta", "Sharpe Ratio", "Information Ratio"])
         .opt_stylize(style=3, color="gray")
-        .save(f"results/table_all_funds_{end_date}.png")
+        .save(f"results/table_all_funds_{end_date}.png", scale=2)
     )
 
 
@@ -319,7 +319,7 @@ def create_holdings_performance(start_date: str, end_date: str) -> None:
             .fmt_percent(["Total Return", "Volatility", "Alpha", "Weight"])
             .fmt_number(["Beta"])
             .opt_stylize(style=3, color="gray")
-            .save(f"results/table_holdings_{fund}_{end_date}.png")
+            .save(f"results/table_holdings_{fund}_{end_date}.png", scale=2)
         )
 
 
@@ -449,6 +449,6 @@ if __name__ == "__main__":
 
     create_overall_fund_performance(start_date, end_date)
     create_holdings_performance(start_date, end_date)
-    create_total_fund_chart(start_date, end_date)
-    create_fund_charts(start_date, end_date)
-    create_combined_funds_chart(start_date, end_date)
+    # create_total_fund_chart(start_date, end_date)
+    # create_fund_charts(start_date, end_date)
+    # create_combined_funds_chart(start_date, end_date)
