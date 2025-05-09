@@ -6,11 +6,15 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "connectorx>=0.4.3",
+    "great-tables>=0.17.0",
     "numpy>=2.2.5",
     "pandas>=2.2.3",
+    "patsy>=1.0.1",
+    "pillow>=11.2.1",
     "polars<=1.28.0",
     "polars-ols>=0.3.5",
     "psycopg2-binary>=2.9.10",
     "pyarrow>=20.0.0",
     "python-dotenv>=1.1.0",
+    "selenium>=4.32.0",
 ]
